@@ -25,7 +25,7 @@ tryTolower <- function(x)
    # tryCatch error
    try_error = tryCatch(tolower(x), error = function(e) e)
    # if not an error
-   if (!inherits(try_error, "error))
+   if (!inherits(try_error, "error"))
        y = tolower(x)
    # result
    return(y)
