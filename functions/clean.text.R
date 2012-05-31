@@ -1,7 +1,7 @@
 # =========================================================================
 # Name:         clean.text
 # Author:       Gaston Sanchez
-# Description:  This function helps to do some text cleaning with several
+# Description:  This function allows to do some text cleaning with several
 #               options such as coverting to lowercase, removing numbers,
 #               removing punctuation symbols, removing extra white spaces
 #
