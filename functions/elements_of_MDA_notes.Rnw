@@ -1,0 +1,112 @@
+\documentclass{article}
+
+\begin{document}
+
+
+Rank
+The number of independent rows (or columns) of a matrix is called the 
+\textbf{rank} of a matrix. 
+
+The rank of a matrix can never exceed the smaller of its two dimensions
+i.e. if $r(A)$ is the rank of matrix $A$ of order $n$ x $p$ then:
+$$r(A) <= min(n,p)$$
+
+If $r(A) = min(n,p)$ then $A$ is said to be of \textit{full} rank \\
+If $r(A) < min(n,p)$ then $A$ is of \texit{deficients} rank
+
+What does the rank means?
+The rank of a matrix is an indication of how much non-redundant information
+the matrix contains.
+
+
+
+Quadratic Forms
+A \textbf{quadratic form} in $p$ variables $x_1, x_2, \dots, x_p$ is a 
+homogeneous function consisting of all possible second order terms, namely
+$$
+a_{11}x_1^2 + \dots + a_{pp}x_p^2 + a_{12}x_1x_2 + \dots + a_{p-1p}x_p
+= sum_{i,j}{p} a_{ij} x_i x_j
+$$
+
+This expression can be written as $x' A x$ 
+
+A square symmetric matrix $A$ and its associated quadratic form is called:
+\begin{itemize}
+ \item \textbf{positive definite} if $x'Ax > 0$ for every $x$ not equal
+ to the null vector, or
+ \item \textbf{positive semidefinite} if $x'Ax >= 0$ for every $x$ not equal
+ to the null vector
+\end{itemize}
+
+Positive definite quadratic forms have matrices of full rank, the eigenvalues
+of which are all greater than zero
+
+Positive semidefinite quadratic forms have matrices which are not of full rank.
+
+
+
+
+Some basic topics
+In the univariate case, it is often necessary to summarise a data set by
+calculating its mean and variance. To summarise multivariate data sets we
+need to find the mean and variance of each of the $p$ variables, together
+with a measure of the way each pair of variables is related. For the latter
+the covariance or correlation of each pair of variables is used.
+
+Covariance
+The covariance of two variables $x$ and $y$ is defined by
+$$cov(x,y) = E(x,y) - \mu_x \mu_y$$
+where $mu_x = E(x)$ and $mu_y = E(y)$
+
+
+From matrix algebra to statistics  (Saporta's book)
+Why matrix algebra allows us to treat data? There's a result that says
+something like this:
+
+The set of all random variables defined over the same universe forms a
+Hilbert $L^2$ space if it is provided of a scalar product:
+$$<X, Y> = E(x,y)$$
+and of the norm $||x|| = (E(x^2))^{1/2}$
+
+What does this implies? Several beautiful implications
+
+Well, the norm of a centered variables becomes the standard deviation
+
+The inner product of two centered variables $x$ and $y$ is the covariance 
+$cov(x,y)$
+
+The expectation of $x$ is the orthogonal projection of $x$ on the
+constant line $a = E(x)$
+
+The formule de Konig-Huygens:
+$$E((X-a)^2) = V(X) + (E(X) - a^2)$$
+can be interpreted as the pythagorean theorem applied to the rectabgle
+triangle $X$, $E(X)$, $a$
+
+
+
+Eigenvalue techniques
+Eigenvalue techniques play a very great role in statistics. Most books on
+multivariate analysis pay attention to it in a separate section on matrix
+algebra. 
+
+The eigenvalue decomposition has become important in multivariate analysis,
+as the maximization (and the minimization) of a quadratic form $w'Gw$ with
+respect to $w$ is a problem which occurs frequently. 
+In many MDA techniques one is looking for the highest eigenvalue of
+certain matrices. All the eigenvalue solutions are also least squares
+solutions. 
+
+In case of treating categorical (nominal) data, the eigenvalue techniques
+can be generalized to treat these variables. The reason for this is that
+each qualitative variable can be represented by a categorical system of 
+dummy variables. The eigenvalue techniques can be performed on sets of
+dummy variables as well.
+
+Most fo the eigenvalue techniques for quantitative variables look for
+``optimal'' linear combinatinos of variables, in which ``optimality''
+is used in terms of maximization of some function. 
+
+
+
+\end{document}

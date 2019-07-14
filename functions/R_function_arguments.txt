@@ -1,0 +1,16 @@
+
+http://cran.r-project.org/web/packages/rockchalk/vignettes/Rchaeology.pdf
+
+http://www.r-bloggers.com/preventing-argument-use-in-r/
+  
+http://stackoverflow.com/questions/3142731/r-using-a-list-for-ellipsis-arguments
+
+http://stackoverflow.com/questions/3057341/how-to-use-rs-ellipsis-feature-when-writing-your-own-function?lq=1
+
+http://stackoverflow.com/questions/17390236/r-using-ellipsis-argument?rq=1
+
+http://stackoverflow.com/questions/7028385/can-i-remove-an-element-in-dot-dot-dot-and-pass-it-on?lq=1
+
+http://stackoverflow.com/questions/16753085/how-to-get-a-list-with-the-arguments-being-used-by-a-function?rq=1
+
+http://stackoverflow.com/questions/14397364/match-call-with-default-arguments
